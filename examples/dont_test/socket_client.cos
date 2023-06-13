@@ -1,0 +1,14 @@
+use Socket from "socket"
+
+puts("Attempting to connect to socket server on localhost 13531")
+string->Function client = Socket::Client.connect("localhost", 13531)
+client.send("Hey! It's Timothy! Are you there?")
+puts(client.recv())
+client.send("Are you here?")
+puts(client.recv())
+client.send("Are you now?")
+puts(client.recv())
+client.send("Are you french?")
+puts(client.recv())
+client.send("Ok, bye!")
+client.close

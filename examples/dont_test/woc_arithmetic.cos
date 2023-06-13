@@ -1,0 +1,12 @@
+use Socket from "socket"
+
+puts("Attempting to quasar.name:9001")
+
+string->Function client = Socket::Client.connect("quasar.name", 9001)
+
+puts("todo do this")
+puts(client.recv())
+puts(2)
+puts(client.recv())
+
+client.close
